@@ -1,0 +1,17 @@
+{
+	"maxplayers" : 100,
+	"name" : "GTA V Roleplay", 
+	"gamemode" : "roleplay", 
+	"stream-distance" : 300.0,
+	"announce" : false,
+	"csharp" : "disabled",
+	"bind": "127.0.0.1",
+	"port": 22005,
+	"url": "https://rage.mp",
+	"language": "es",
+	"max-ping": 500,
+	"min-fps": 20,
+	"allow-cef-debugging": true,
+	"enable-nodejs": true,
+	"voice-chat": true
+}
