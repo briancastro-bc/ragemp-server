@@ -1,15 +1,20 @@
-import jetpack from 'fs-jetpack';
 import path from 'path';
-import { config } from 'dotenv';
-import nodeResolvePlugin from '@rollup/plugin-node-resolve';
-import { swc } from 'rollup-plugin-swc3';
-import jsonPlugin from '@rollup/plugin-json';
-import { blueBright, greenBright, redBright } from 'colorette';
+import jetpack, { write } from 'fs-jetpack';
 import builtinModules from 'builtin-modules';
-import commonjsPlugin from '@rollup/plugin-commonjs';
+import jsonPlugin from '@rollup/plugin-json';
 import tsPaths from 'rollup-plugin-tsconfig-paths';
+import commonjsPlugin from '@rollup/plugin-commonjs';
+import nodeResolvePlugin from '@rollup/plugin-node-resolve';
 import typescriptPlugin from 'rollup-plugin-typescript2';
-import { terser } from 'rollup-plugin-terser';
+
+import { config } from 'dotenv';
+import { swc } from 'rollup-plugin-swc3';
+import { 
+	blueBright, 
+	greenBright, 
+	redBright,
+} from 'colorette';
+import { terser, } from 'rollup-plugin-terser';
 
 config({
 	path: path.resolve('.env')
@@ -20,7 +25,9 @@ const isProduction = process.env.PRODUCTION_MODE === 'true';
 const useSWC = process.env.COMPILER_USE_SWC === 'true';
 const sourcePath = path.resolve('src');
 const pkgJson = jetpack.read('package.json', 'json');
-const localInstalledPackages = [...Object.keys(pkgJson.dependencies)];
+const localInstalledPackages = [
+	...Object.keys(pkgJson.dependencies),
+];
 
 /**
  * Resolve given path by fs-jetpack
@@ -67,6 +74,7 @@ function cleanUp() {
 		'dotnet/**/*',
 		'maps/**/*',
 		'plugins/**/*',
+		'client_packages/cef/**/*',
 		'client_packages/game_resources/dlcpacks/**/*',
 		'pnpm-lock.yaml',
 		'package-lock.json',
@@ -137,7 +145,8 @@ const generateConfig = (options = {}) => {
 	const plugins = [terserMinify];
 
 	const external = [...builtinModules, ...localInstalledPackages];
-	const tsConfigPath = resolvePath([sourcePath, isServer ? 'server' : 'client', 'tsconfig.json']);
+	// const tsConfigPath = resolvePath([sourcePath, isServer ? 'server' : 'client', 'tsconfig.json']);
+	const tsConfigPath = resolvePath([sourcePath, 'tsconfig.app.json']);
 
 	return {
 		input: resolvePath([sourcePath, isServer ? 'server' : 'client', 'index.ts']),

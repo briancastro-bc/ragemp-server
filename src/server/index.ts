@@ -1,6 +1,10 @@
-import './setup';
+import 'dotenv/config';
+import 'reflect-metadata';
 
-import { SHARED_CONSTANTS } from '@shared/constants';
+import container from '@ioc';
+
+const valueFromContainer = container.resolve<string>('random');
+console.log('random value from container', valueFromContainer);
 
 mp.events.add('playerChat', (player, text) => {
 	const playerPosition = player.position;
@@ -15,10 +19,14 @@ mp.events.add('playerJoin', (player) => {
 	player.setFaceFeature(1, 1.0);
 	player.setFaceFeature(11, -1.0);
 
+	const valueFromContainer = container.resolve<string>('random');
+	console.log('random value from container', valueFromContainer);
 });
 
 mp.events.add('playerReady', (player) => {
 	console.log(`${player.name} is ready!`);
+	const valueFromContainer = container.resolve<string>('random');
+	console.log('random value from container', valueFromContainer);
 
 	player.customProperty = 1;
 

@@ -1,0 +1,24 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@ioc": ["./ioc/index.ts"],
+      "@config/*": ["./config/*"],
+      "@client/*": ["./client/*"],
+      "@server/*": ["./server/*"],
+      "@shared/*": ["./shared/*"],
+      "@presentation/*": ["./presentation/*"]
+    }
+  },
+  "include": [
+    "./**/*.ts"
+  ],
+  "exclude": [
+    "./client/cef",
+  ],
+  "references": [
+    { "path": "./client/tsconfig.json", },
+    { "path": "./server/tsconfig.json", }
+  ]
+}
