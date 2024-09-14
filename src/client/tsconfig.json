@@ -1,9 +1,15 @@
 {
 	"extends": "../tsconfig.app.json",
 	"compilerOptions": {
+		"jsx": "react-jsx",
 		"types": [
-      "../../node_modules/@ragempcommunity/types-client", 
+			"../../node_modules/@ragempcommunity/types-client",
+      "../../node_modules/root/packages/client", 
       "./@types"
     ],
 	},
+	"include": [
+		"./**/*",
+		"./cef/**/*.tsx"
+	]
 }

@@ -9,9 +9,9 @@ import {
 
 const dependencies: Array<Injectable> = [
   {
-    token: 'random',
+    token: 'cef_url',
     provider: {
-      useValue: 'RANDOM_VALUE',
+      useValue: 'package://cef/index.html',
     },
     type: 'ValueProvider',
   },

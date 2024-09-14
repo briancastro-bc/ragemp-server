@@ -7,15 +7,13 @@
       "@config/*": ["./config/*"],
       "@client/*": ["./client/*"],
       "@server/*": ["./server/*"],
-      "@shared/*": ["./shared/*"],
-      "@presentation/*": ["./presentation/*"]
-    }
+      "@contexts/*": ["./contexts/*"],
+      "@shared/*": ["./contexts/shared/*"],
+    },
+    "noImplicitAny": false
   },
   "include": [
-    "./**/*.ts"
-  ],
-  "exclude": [
-    "./client/cef",
+    "./**/*.ts",
   ],
   "references": [
     { "path": "./client/tsconfig.json", },

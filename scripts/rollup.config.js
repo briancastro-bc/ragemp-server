@@ -74,8 +74,10 @@ function cleanUp() {
 		'dotnet/**/*',
 		'maps/**/*',
 		'plugins/**/*',
-		'client_packages/cef/**/*',
 		'client_packages/game_resources/dlcpacks/**/*',
+		// 'ioc', // TODO: keep?
+		// 'shared', // TODO: keep?
+		// 'contexts', // TODO: keep?
 		'pnpm-lock.yaml',
 		'package-lock.json',
 		'yarn.lock'

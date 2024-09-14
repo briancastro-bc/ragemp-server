@@ -2,8 +2,8 @@
 	"extends": "../tsconfig.app.json",
 	"compilerOptions": {
 		"types": [
-      "../../node_modules/@ragempcommunity/types-server", 
-      "./@types"
+			"../../node_modules/root/packages/server",
+			"./@types"
     ],
 	},
 }

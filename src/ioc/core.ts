@@ -43,6 +43,9 @@ function registerDependency(container: DependencyContainer, dependency: Injectab
 
 export function registerDependencies(container: DependencyContainer, dependencies: Array<Injectable>): void {
   dependencies.forEach(dependency => {
+    if (container.isRegistered(dependency.token)) 
+      return;
+
     registerDependency(container, dependency);
   });
 }

@@ -5,6 +5,7 @@
   ],
   "compileOnSave": true,
   "compilerOptions": {
+    "jsx": "react-jsx",
     "incremental": true,
     "target": "ESNext",
     "lib": [
@@ -44,9 +45,6 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "skipLibCheck": false
-  },
-  "references": [
-    
-  ]
+    "skipLibCheck": true
+  }
 }
