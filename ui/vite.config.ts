@@ -12,6 +12,7 @@ export default defineConfig({
   ],
   build: {
     outDir: resolve('..', 'dist', 'client_packages', 'cef'),
+    emptyOutDir: true,
     chunkSizeWarningLimit: 5000,
   }
 })

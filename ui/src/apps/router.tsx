@@ -4,8 +4,6 @@ import {
 } from 'react-router-dom';
 
 import RootLayout from '@apps/Shared/Layout/RootLayout';
-
-// import RootLayout from '@apps /RootLayout';
 // import ErrorLayout from '@Layout/ErrorLayout';
 // import NotFoundLayout from '@Layout/NotFoundLayout';
 
@@ -38,6 +36,7 @@ const routes: Array<RouteObject> = [
   }
 ];
 
+// const router = createBrowserRouter(routes);
 const router = createHashRouter(routes);
 
 export default router;

@@ -1,0 +1,7 @@
+{
+  "extends": "../tsconfig.app.json",
+  "compilerOptions": {
+    "importHelpers": false,
+    "strictPropertyInitialization": false,
+  }
+}

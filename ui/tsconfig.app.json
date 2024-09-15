@@ -7,6 +7,8 @@
       "@theme/*": ["./src/apps/Shared/Theme/*"],
       "@assets/*": ["./src/assets/*"],
       "@ioc/core": ["./src/ioc/index"],
+      "@Components/*": ["./src/apps/Shared/Components/*"],
+      "@Layout/*": ["./src/apps/Shared/Layout/*"]
     },
     "types": [
       "./node_modules/@ragempcommunity/types-cef",

@@ -146,7 +146,10 @@ const generateConfig = (options = {}) => {
 	const serverPlugins = [];
 	const plugins = [terserMinify];
 
-	const external = [...builtinModules, ...localInstalledPackages];
+	const external = [
+		...builtinModules, 
+		...localInstalledPackages
+	];
 	// const tsConfigPath = resolvePath([sourcePath, isServer ? 'server' : 'client', 'tsconfig.json']);
 	const tsConfigPath = resolvePath([sourcePath, 'tsconfig.app.json']);
 
@@ -174,7 +177,7 @@ const generateConfig = (options = {}) => {
 							},
 							transform: {
 								legacyDecorator: true,
-								decoratorMetadata: true
+								decoratorMetadata: true,
 							},
 							externalHelpers: true,
 							keepClassNames: true,
@@ -188,7 +191,7 @@ const generateConfig = (options = {}) => {
 			isServer ? [...serverPlugins] : null,
 			...plugins
 		],
-		external: isServer ? [...external] : null,
+		external: isServer ? [...external,] : null,
 		inlineDynamicImports: true
 	};
 };

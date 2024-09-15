@@ -3,12 +3,10 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@ioc": ["./ioc/index.ts"],
-      "@config/*": ["./config/*"],
       "@client/*": ["./client/*"],
       "@server/*": ["./server/*"],
-      "@contexts/*": ["./contexts/*"],
-      "@shared/*": ["./contexts/shared/*"],
+      "@shared/*": ["./shared/*"],
+      "@ioc/*": ["./shared/ioc/*"],
     },
     "noImplicitAny": false
   },
@@ -17,6 +15,7 @@
   ],
   "references": [
     { "path": "./client/tsconfig.json", },
-    { "path": "./server/tsconfig.json", }
+    { "path": "./server/tsconfig.json", },
+    { "path": "./shared/tsconfig.json", },
   ]
 }

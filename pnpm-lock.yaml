@@ -11,15 +11,15 @@ dependencies:
   dotenv:
     specifier: ^16.4.5
     version: 16.4.5
+  inversify:
+    specifier: ^6.0.2
+    version: 6.0.2
   pg:
     specifier: ^8.12.0
     version: 8.12.0
   reflect-metadata:
     specifier: ^0.2.2
     version: 0.2.2
-  tsyringe:
-    specifier: ^4.8.0
-    version: 4.8.0
   typeorm:
     specifier: ^0.3.20
     version: 0.3.20(pg@8.12.0)
@@ -28,7 +28,13 @@ dependencies:
     version: 10.0.0
 
 devDependencies:
+  '@ragempcommunity/types-cef':
+    specifier: ^2.1.8
+    version: 2.1.8
   '@ragempcommunity/types-client':
+    specifier: ^2.1.8
+    version: 2.1.8
+  '@ragempcommunity/types-server':
     specifier: ^2.1.8
     version: 2.1.8
   '@rollup/plugin-commonjs':
@@ -52,6 +58,9 @@ devDependencies:
   '@types/node':
     specifier: ^17.0.23
     version: 17.0.45
+  '@types/reflect-metadata':
+    specifier: ^0.1.0
+    version: 0.1.0
   builtin-modules:
     specifier: ^3.2.0
     version: 3.3.0
@@ -477,8 +486,16 @@ packages:
     dev: false
     optional: true
 
+  /@ragempcommunity/types-cef@2.1.8:
+    resolution: {integrity: sha512-8j6Qy4BFfibBLghb212ma50RZ9HFwADgzjS042xOvs16ziZbzVf9F5nEuehBF4feMeYrwW3+nBs/hgDDa2sPaQ==}
+    dev: true
+
   /@ragempcommunity/types-client@2.1.8:
     resolution: {integrity: sha512-l7V0DOkSsTixJofcSINUhkR70LTaHdPkjtpLyFbhVEVXzEOJxMfYRC9dYXGhkwjZX+46ubZan3lSUZpywObLvQ==}
+    dev: true
+
+  /@ragempcommunity/types-server@2.1.8:
+    resolution: {integrity: sha512-evAXoLnFvyHFtusVmpjd4OPcc+gJNp3rVWA056ss5eOc1dqFiehuGGAmFAzcvcWnUuMR9PmL8LSXc2jWR9N4pw==}
     dev: true
 
   /@rollup/plugin-commonjs@21.1.0(rollup@2.79.1):
@@ -825,6 +842,13 @@ packages:
 
   /@types/node@17.0.45:
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
+    dev: true
+
+  /@types/reflect-metadata@0.1.0:
+    resolution: {integrity: sha512-bXltFLY3qhzCnVYP5iUpeSICagQ8rc9K2liS+8M0lBcz54BHs3O6W5UvqespVSuebo1BXLi+/y9ioELAW9SC2A==}
+    deprecated: This is a stub types definition for reflect-metadata (https://github.com/rbuckton/ReflectDecorators). reflect-metadata provides its own type definitions, so you don't need @types/reflect-metadata installed!
+    dependencies:
+      reflect-metadata: 0.2.2
     dev: true
 
   /@types/resolve@1.17.1:
@@ -1636,6 +1660,10 @@ packages:
   /inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
 
+  /inversify@6.0.2:
+    resolution: {integrity: sha512-i9m8j/7YIv4mDuYXUAcrpKPSaju/CIly9AHK5jvCBeoiM/2KEsuCQTTP+rzSWWpLYWRukdXFSl6ZTk2/uumbiA==}
+    dev: false
+
   /is-binary-path@2.1.0:
     resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
     engines: {node: '>=8'}
@@ -2163,7 +2191,6 @@ packages:
 
   /reflect-metadata@0.2.2:
     resolution: {integrity: sha512-urBwgfrvVP/eAyXx4hluJivBKzuEbSQs9rKWCrCkbSxNv8mxPcUZKeuoF3Uy4mJl3Lwprp6yy5/39VWigZ4K6Q==}
-    dev: false
 
   /require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
@@ -2491,19 +2518,8 @@ packages:
       typescript: 5.6.2
     dev: true
 
-  /tslib@1.14.1:
-    resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
-    dev: false
-
   /tslib@2.7.0:
     resolution: {integrity: sha512-gLXCKdN1/j47AiHiOkJN69hJmcbGTHI0ImLmbYLHykhgeN0jVGola9yVjFgzCUklsZQMW55o+dW7IXv3RCXDzA==}
-
-  /tsyringe@4.8.0:
-    resolution: {integrity: sha512-YB1FG+axdxADa3ncEtRnQCFq/M0lALGLxSZeVNbTU8NqhOVc51nnv2CISTcvc1kyv6EGPtXVr0v6lWeDxiijOA==}
-    engines: {node: '>= 6.0.0'}
-    dependencies:
-      tslib: 1.14.1
-    dev: false
 
   /type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
