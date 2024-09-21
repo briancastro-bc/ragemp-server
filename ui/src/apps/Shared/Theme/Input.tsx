@@ -98,9 +98,9 @@ const CustomInput = forwardRef<HTMLInputElement, CustomInputProps>((
     <div className='flex flex-col gap-y-2'>
       <label 
         htmlFor={args.id}
-        className={`flex flex-col rounded-xl px-3 py-3 border gap-y-1 ${args.className ?? ''} ${focus ? 'border-primary-main' : 'border-dark-200'}`}>
+        className={`flex flex-col rounded-xl px-3 py-3 border gap-y-1 ${args.className ?? ''} ${focus ? 'border-primary-alt-main' : 'border-dark-200'}`}>
         {label && (
-          <span className={`ml-1 text-sm leading-5 font-poppins font-semibold ${focus ? 'text-primary-main' : 'text-dark-900'}`}>
+          <span className={`ml-1 text-sm leading-5 font-poppins font-semibold ${focus ? 'text-primary-alt-main' : 'text-dark-900'}`}>
             {label}
           </span>
         )}
@@ -113,13 +113,13 @@ const CustomInput = forwardRef<HTMLInputElement, CustomInputProps>((
             ...args.InputProps,
             ...(!clipboard && icon && args.type !== 'password' && {
               endAdornment: <span 
-                className={`absolute right-0 p-1 rounded-xl ${focus ? 'text-primary-main' : 'text-dark-300'}`}>
+                className={`absolute right-0 p-1 rounded-xl ${focus ? 'text-primary-alt-main' : 'text-dark-300'}`}>
                 {icon}
               </span>,
             }),
             ...(args.disabled && clipboard && args.type !== 'password' && {
               endAdornment: <span 
-                className='z-20 p-1 rounded-md border border-primary-main text-primary-main hover:cursor-pointer'
+                className='z-20 p-1 rounded-md border border-primary-alt-main text-primary-alt-main hover:cursor-pointer'
                 onClick={handleClipboard}>
                 <Copy className='text-xl' />
               </span>,

@@ -45,7 +45,6 @@ export class CharacterEntity implements Character {
   @Column({
     type: 'varchar',
     length: 80,
-    charset: 'utf8',
   })
   name: string;
 

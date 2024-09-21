@@ -6,7 +6,7 @@
   "compileOnSave": true,
   "compilerOptions": {
     "incremental": true,
-    "target": "ESNext",
+    "target": "ES2016",
     "lib": [
       "ES2016",
       "ESNext",
@@ -17,7 +17,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "useDefineForClassFields": true,
-    "module": "ESNext",
+    "module": "ES2015",
     "rootDir": "./",
     "moduleResolution": "node",
     "resolveJsonModule": true,

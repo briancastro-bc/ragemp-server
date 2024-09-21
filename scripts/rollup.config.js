@@ -1,6 +1,8 @@
 import path from 'path';
 import jetpack, { write } from 'fs-jetpack';
 import builtinModules from 'builtin-modules';
+
+import url from '@rollup/plugin-url';
 import jsonPlugin from '@rollup/plugin-json';
 import tsPaths from 'rollup-plugin-tsconfig-paths';
 import commonjsPlugin from '@rollup/plugin-commonjs';
@@ -160,6 +162,7 @@ const generateConfig = (options = {}) => {
 			format: 'cjs'
 		},
 		plugins: [
+			url(),
 			tsPaths({ tsConfigPath }),
 			nodeResolvePlugin(),
 			jsonPlugin(),

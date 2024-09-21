@@ -13,7 +13,7 @@ export interface Phone extends Model {
   style: PhoneStyle;
   number: string | null;
   balance?: number;
-  contacts: Array<Character>; // TODO: pasarlo a una entidad contato?
+  // contacts: Array<Character>; // TODO: pasarlo a una entidad contato?
   // calls?
   // messages?
 }

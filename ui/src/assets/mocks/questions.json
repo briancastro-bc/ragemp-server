@@ -1,0 +1,482 @@
+[
+  {
+    "id": 0,
+    "image": "",
+    "title": "Deathmatch (DM)",
+    "description": "Es la acción de matar o intentar matar a otro usuario sin motivo válido o justificación de la acción (se conoce además como Agredir Sin Razón). También puede caer en este concepto si se mata a otro usuario por diversión",
+    "question": "Estas caminando por la calle y de repente ves que una persona saca un arma y mata a otro jugador sin aparente razón válida. ¿Qué harías?",
+    "correctAnswer": 2,
+    "answers": [
+      {
+        "id": 0,
+        "text": "Sacar mi propia arma y matarlo para vengar al jugador que murió.",
+        "isCorrect": false
+      },
+      {
+        "id": 1,
+        "text": "Ignorarlo completamente y seguir caminando como si nada hubiera pasado puesto que yo no soy el implicado.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "Ejecutar rol de llamar a la policía y luego, reportar al jugador con las pruebas suficientes.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "text": "Unirme al tiroteo y empezar a disparar a todos para participar en la acción.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "image": "",
+    "title": "Powergaming (PG)",
+    "description": "Son acciones en las que un jugador fuerza situaciones o realiza acciones imposibles o poco realistas que no permiten que otros jugadores reaccionen de manera adecuada. En esencia, es cuando un jugador \"abusa\" de las reglas del juego para forzar un resultado que beneficia solo a él, sin tener en cuenta las limitaciones lógicas o las capacidades de los demás personajes",
+    "question": "Estas en una disputa de bandas y en un momento dado, recibes varios disparos. ¿Qué debes hacer?",
+    "correctAnswer": 3,
+    "answers": [
+      {
+        "id": 0,
+        "text": "Me desconecto porque no quiero que me maten.",
+        "isCorrect": false
+      },
+      {
+        "id": 1,
+        "text": "Empiezo a saltar, correr y hacer zig zag para evitar más disparos.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "Roleo que me curo las heridas y continuar la pelea como si nada hubiera pasado.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "Realizo el respectivo rol de heridas y quedo fuera combate debido a las mismas",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "",
+    "title": "Metagaming (MG)",
+    "description": "description",
+    "question": "question",
+    "correctAnswer": 0,
+    "answers": [
+      {
+        "id": 0,
+        "text": "Sacar mi propia arma y matarlo para vengar al jugador que murió.",
+        "isCorrect": true
+      },
+      {
+        "id": 1,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "",
+    "title": "",
+    "description": "",
+    "question": "",
+    "correctAnswer": 0,
+    "answers": [
+      {
+        "id": 0,
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": 1,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "",
+    "title": "",
+    "description": "",
+    "question": "",
+    "correctAnswer": 0,
+    "answers": [
+      {
+        "id": 0,
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": 1,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "",
+    "title": "",
+    "description": "",
+    "question": "",
+    "correctAnswer": 0,
+    "answers": [
+      {
+        "id": 0,
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": 1,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "",
+    "title": "",
+    "description": "",
+    "question": "",
+    "correctAnswer": 0,
+    "answers": [
+      {
+        "id": 0,
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": 1,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "",
+    "title": "",
+    "description": "",
+    "question": "",
+    "correctAnswer": 0,
+    "answers": [
+      {
+        "id": 0,
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": 1,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "",
+    "title": "",
+    "description": "",
+    "question": "",
+    "correctAnswer": 0,
+    "answers": [
+      {
+        "id": 0,
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": 1,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "",
+    "title": "",
+    "description": "",
+    "question": "",
+    "correctAnswer": 0,
+    "answers": [
+      {
+        "id": 0,
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": 1,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "",
+    "title": "",
+    "description": "",
+    "question": "",
+    "correctAnswer": 0,
+    "answers": [
+      {
+        "id": 0,
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": 1,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "",
+    "title": "",
+    "description": "",
+    "question": "",
+    "correctAnswer": 0,
+    "answers": [
+      {
+        "id": 0,
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": 1,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "",
+    "title": "",
+    "description": "",
+    "question": "",
+    "correctAnswer": 0,
+    "answers": [
+      {
+        "id": 0,
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": 1,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "",
+    "title": "",
+    "description": "",
+    "question": "",
+    "correctAnswer": 0,
+    "answers": [
+      {
+        "id": 0,
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": 1,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "",
+    "title": "",
+    "description": "",
+    "question": "",
+    "correctAnswer": 0,
+    "answers": [
+      {
+        "id": 0,
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": 1,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "",
+    "title": "",
+    "description": "",
+    "question": "",
+    "correctAnswer": 0,
+    "answers": [
+      {
+        "id": 0,
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": 1,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  }
+]

@@ -15,7 +15,7 @@ const LoadingBar = forwardRef<HTMLDivElement, LoadingBarProps>(
             height: `${props?.height}px`,
           }),
         }}>
-          <div className='animate-progress h-full bg-primary-main origin-left-right rounded-full'></div>
+          <div className='animate-progress h-full bg-primary-alt-main origin-left-right rounded-full'></div>
       </div>
     );
   }

@@ -1,6 +1,7 @@
 import { 
   RouteObject,
   createHashRouter,
+  createBrowserRouter,
 } from 'react-router-dom';
 
 import RootLayout from '@apps/Shared/Layout/RootLayout';
@@ -12,7 +13,6 @@ const routes: Array<RouteObject> = [
     id: 'root',
     path: '',
     element: <RootLayout/>,
-    // element: <ErrorLayout/>,
     // errorElement: <ErrorLayout/>,
     children: [
       {
@@ -23,10 +23,16 @@ const routes: Array<RouteObject> = [
       {
         id: 'login',
         path: 'login',
-        lazy: () => import('./Login/pages/Login')
+        lazy: () => import('./Auth/pages/Login')
           .then(module => ({ Component: module.default, })),
       },
-    ]
+      {
+        id: 'signup',
+        path: 'signup',
+        lazy: () => import('./Auth/pages/Signup')
+          .then(module => ({ Component: module.default, })),
+      },
+    ],
   },
   {
     id: '404',
@@ -36,7 +42,7 @@ const routes: Array<RouteObject> = [
   }
 ];
 
-// const router = createBrowserRouter(routes);
 const router = createHashRouter(routes);
+// const router = createBrowserRouter(routes);
 
 export default router;

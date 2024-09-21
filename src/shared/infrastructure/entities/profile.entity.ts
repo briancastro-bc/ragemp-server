@@ -63,7 +63,7 @@ export class ProfileEntity implements Profile {
   @Column({
     type: 'text',
   })
-  psicologicalDescription: string;
+  psychologicalDescription: string;
 
   @CreateDateColumn()
   createdAt: string;

@@ -11,6 +11,9 @@ dependencies:
   '@emotion/styled':
     specifier: ^11.13.0
     version: 11.13.0(@emotion/react@11.13.3)(@types/react@18.3.5)(react@18.3.1)
+  '@hookform/resolvers':
+    specifier: ^3.9.0
+    version: 3.9.0(react-hook-form@7.53.0)
   '@mui/icons-material':
     specifier: ^6.1.0
     version: 6.1.0(@mui/material@6.1.0)(@types/react@18.3.5)(react@18.3.1)
@@ -32,6 +35,9 @@ dependencies:
   react-dom:
     specifier: ^18.3.1
     version: 18.3.1(react@18.3.1)
+  react-hook-form:
+    specifier: ^7.53.0
+    version: 7.53.0(react@18.3.1)
   react-i18next:
     specifier: ^15.0.1
     version: 15.0.1(i18next@23.15.1)(react-dom@18.3.1)(react@18.3.1)
@@ -47,6 +53,9 @@ dependencies:
   tsyringe:
     specifier: ^4.8.0
     version: 4.8.0
+  zod:
+    specifier: ^3.23.8
+    version: 3.23.8
 
 devDependencies:
   '@eslint/js':
@@ -689,6 +698,14 @@ packages:
     dependencies:
       levn: 0.4.1
     dev: true
+
+  /@hookform/resolvers@3.9.0(react-hook-form@7.53.0):
+    resolution: {integrity: sha512-bU0Gr4EepJ/EQsH/IwEzYLsT/PEj5C0ynLQ4m+GSHS+xKH4TfSelhluTgOaoc4kA5s7eCsQbM4wvZLzELmWzUg==}
+    peerDependencies:
+      react-hook-form: ^7.0.0
+    dependencies:
+      react-hook-form: 7.53.0(react@18.3.1)
+    dev: false
 
   /@humanwhocodes/module-importer@1.0.1:
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -2376,6 +2393,15 @@ packages:
       scheduler: 0.23.2
     dev: false
 
+  /react-hook-form@7.53.0(react@18.3.1):
+    resolution: {integrity: sha512-M1n3HhqCww6S2hxLxciEXy2oISPnAzxY7gvwVPrtlczTM/1dDadXgUxDpHMrMTblDOcm/AXtXxHwZ3jpg1mqKQ==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17 || ^18 || ^19
+    dependencies:
+      react: 18.3.1
+    dev: false
+
   /react-i18next@15.0.1(i18next@23.15.1)(react-dom@18.3.1)(react@18.3.1):
     resolution: {integrity: sha512-NwxLqNM6CLbeGA9xPsjits0EnXdKgCRSS6cgkgOdNcPXqL+1fYNl8fBg1wmnnHvFy812Bt4IWTPE9zjoPmFj3w==}
     peerDependencies:
@@ -2905,3 +2931,7 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  /zod@3.23.8:
+    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
+    dev: false

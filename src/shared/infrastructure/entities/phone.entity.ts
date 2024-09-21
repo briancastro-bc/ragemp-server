@@ -50,8 +50,8 @@ export class PhoneEntity implements Phone {
   })
   balance: number;
 
-  @Column()
-  contacts: Array<Character>;
+  // @Column()
+  // contacts: Array<Character>;
 
   @CreateDateColumn()
   createdAt: string;

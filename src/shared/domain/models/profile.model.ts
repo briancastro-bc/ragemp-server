@@ -15,5 +15,7 @@ export interface Profile extends Model {
   nacionality: string;
   biography: string;
   physicalDescription: string;
-  psicologicalDescription: string;
+  psychologicalDescription: string;
+  // skills: 'Comunicacion asertiva',
+  // 
 }

@@ -20,12 +20,17 @@ export class CameraImplementationService implements CameraService {
     throw new Error('Method not implemented.');
   }
 
-  createCamera(name: string, position: Vector3): void {
+  createCamera(
+    name: string, 
+    position: Vector3, 
+    rotation: Vector3 = new mp.Vector3(0, 0, 0),
+    fov: number = 50
+  ): void {
     const current = this.cameras.find(c => c.name === name);
     if (!current) {
       const newCamera = new Camera(
         name,
-        mp.cameras.new(name, position, new mp.Vector3(0, 0, 0), 50)
+        mp.cameras.new(name, position, rotation, fov)
       );
 
       this.cameras.push(newCamera);
@@ -35,11 +40,15 @@ export class CameraImplementationService implements CameraService {
     if (mp.cameras.exists(current.camera))
       current.camera.destroy();
 
-    current.camera = mp.cameras.new(name, position, new mp.Vector3(0, 0, 0), 50);
+    current.camera = mp.cameras.new(name, position, rotation, fov);
     current.name = name;
   }
 
-  setCameraActive(name: string, toggle: boolean, time: number = 0): void {
+  setCameraActive(
+    name: string, 
+    toggle: boolean, 
+    time: number = 0
+  ): void {
     const current = this.cameras.find(c => c.name === name);
     if (current && mp.cameras.exists(current.camera)) {
       current.camera.setActive(toggle);
@@ -47,7 +56,15 @@ export class CameraImplementationService implements CameraService {
     }
   }
 
-  startInterpolate(name: string, position: Vector3, to: Vector3, rotation: Vector3, fov: number, duration: number, unk: number): void {
+  startInterpolate(
+    name: string, 
+    position: Vector3, 
+    to: Vector3, 
+    rotation: Vector3, 
+    fov: number, 
+    duration: number, 
+    unk: number
+  ): void {
     const current = this.cameras.find(c => c.name === name);
     if (current && mp.cameras.exists(current.camera)) {
       const currentFov = current.camera.getFov();
@@ -88,6 +105,11 @@ export class CameraImplementationService implements CameraService {
   }
 
   destroyCamera(name: string): void {
-    throw new Error('Method not implemented.');
+    const current = this.cameras.find(c => c.name === name);
+    if (!current || !mp.cameras.exists(current.camera)) return; 
+
+    current.camera.setActive(false);
+    current.camera.destroy(true);
+    mp.game.cam.renderScriptCams(false, false, 0, false, false, 0);
   }
 }
